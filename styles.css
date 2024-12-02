@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3 {
+  color: #10263f;
+  text-align: center;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: #0a192f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  color: #ccd6f6;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-text h1 span {
+  color: var(--highlight-color);
+  display: block;
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-size: 3.5rem;
+  color: #8892b0;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #8892b0;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.about img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Skills Section */
+.skills {
+  padding: 40px 20px;
+  background: #f9f9f9;
+
+}
+
+.skill {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #007bff;
+    width: 0;
+    animation: fillProgress 2s ease-in-out forwards;
+  }
+  
+  @keyframes fillProgress {
+    100% {
+      width: var(--progress-width);
+    }
+  }
+  
+  /* Add some spacing and styles for the skill text */
+  .skill p {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+
+/* Projects Section */
+.projects {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  max-width: 500%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Resume Section */
+.resume {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.resume a {
+  text-decoration: none;
+  color: #fff;
+  background: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.resume a:hover {
+  background: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
